@@ -1,56 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/test-two/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/test-two/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/test-two/assets/styles-guStct1H.css">
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blyzr Zune | IT-школа нового поколения</title>
+  <meta name="description" content="Инновационная IT-школа. Технологии нового поколения, обучение и карьера в Европе.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@500;700;900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" crossorigin src="/blyzr-zune/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/blyzr-zune/assets/styles-BVlfar5v.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="header__container container">
+    <a href="#" class="header__logo">
+      Blyzr<span class="header__logo-accent">Zune</span>
+    </a>
+
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#hero" class="nav__link active">Главная</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">О школе</a></li>
+        <li class="nav__item"><a href="#programs" class="nav__link">Программы</a></li>
+        <li class="nav__item"><a href="#innovation" class="nav__link">Инновации</a></li>
+        <li class="nav__item"><a href="#career" class="nav__link">Карьера</a></li>
+        <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
+        <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--primary">Старт</a>
+      <button class="header__burger" aria-label="Меню">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
   </div>
 </header>
 
-
-    <main>
+    <main class="main-content">
       <!-- Loads the specified .html file -->
       
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="footer__container container">
+    <div class="footer__col">
+      <a href="#" class="footer__logo">Blyzr<span class="footer__logo-accent">Zune</span></a>
+      <p class="footer__desc">
+        Технология нового поколения для вашего обучения.
+        Постройте карьеру, которая работает на вас.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Навигация</h3>
+      <ul class="footer__list">
+        <li><a href="#about" class="footer__link">О платформе</a></li>
+        <li><a href="#programs" class="footer__link">Курсы</a></li>
+        <li><a href="#innovation" class="footer__link">Методология</a></li>
+        <li><a href="#contact" class="footer__link">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Правовая информация</h3>
+      <ul class="footer__list">
+        <li><a href="privacy.html" class="footer__link">Политика конфиденциальности</a></li>
+        <li><a href="cookies.html" class="footer__link">Cookie Policy</a></li>
+        <li><a href="terms.html" class="footer__link">Условия использования</a></li>
+        <li><a href="return.html" class="footer__link">Политика возврата</a></li>
+        <li><a href="disclaimer.html" class="footer__link">Отказ от ответственности</a></li>
+        <li><a href="personal-data-policy.html" class="footer__link">Обработка данных</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Контакты</h3>
+      <ul class="footer__contact-list">
+        <li class="footer__contact-item">
+          <i data-lucide="map-pin" class="footer__icon"></i>
+          <span>Via Alessandro Volta, 12, 20121 Milano MI, Italia</span>
+        </li>
+        <li class="footer__contact-item">
+          <i data-lucide="phone" class="footer__icon"></i>
+          <a href="tel:+390245908871">+39 02 4590 8871</a>
+        </li>
+        <li class="footer__contact-item">
+          <i data-lucide="mail" class="footer__icon"></i>
+          <a href="mailto:hello@blyzr-zune.ink">hello@blyzr-zune.ink</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <p>&copy; 2025 Blyzr Zune. Все права защищены. Платформа уже доступна в Европе.</p>
   </div>
 </footer>
-
 
   </body>
 </html>
